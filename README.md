@@ -111,7 +111,7 @@ No hardware sensors used
 👨‍💻 Author
 
 Nagesh Kamane
-📧 your-nagesh.kamane1@gmail.com
+📧  nagesh.kamane1@gmail.com
 
 🔗 LinkedIn: https://www.linkedin.com/in/nagesh-kamane-a33735255/
 
