@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Real-Time Fire & Smoke Detector Using YOLOv10</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/css/animate.css">
+    <link rel="stylesheet" href="../static/css/owl.carousel.css">
+    <link rel="stylesheet" href="../static/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../static/css/magnific-popup.css">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="../static/css/templatemo-style-2.css">
+
+</head>
+
+<body>
+
+
+    <section class="preloader">
+        <div class="spinner">
+            <span class="spinner-rotate"></span>
+        </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                </button>
+                <a href="/about" class="navbar-brand">Real-Time Fire <span>&</span> Smoke Detector Using YOLOv10</a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-nav-first">
+                    <li><a href="/about" class="smoothScroll">Upload</a></li>
+                    <li><a href="/live_video" class="smoothScroll">Live Camera</a></li>
+                    <li><a href="/performance" class="smoothScroll">Performance</a></li>
+                    <li><a href="charts" class="smoothScroll">Charts</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <a href="/logout" class="section-btn">LogOut</a>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOME -->
+    <section id="home" class="slider" data-stellar-background-ratio="0.5">
+        <div class="row">
+            <div class="owl-carousel owl-theme">
+                <div class="item item-first">
+                    <img src="../static/images/header_fire_smoke.jpg" class="bg-video"
+                        style="width: 100%; height: 100%; object-fit: cover; position: absolute; z-index: -1;">
+                    <div class="caption">
+                        <div class="container">
+                            <div class="col-md-8 col-sm-12">
+                                <h3>Real-Time Fire & Smoke Detection Using </h3>
+                                <h1>Enhancing Safety with Real-Time Detection</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+    <!-- MENU-->
+    <section id="menu" data-stellar-background-ratio="0.5">
+
+
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-4 col-sm-6">
+                    <!-- CHART THUMB -->
+                    <div class="menu-thumb">
+                        <a href="../static/images/charts/aspect_ratio_distribution.png" class="image-popup"
+                            title="Aspect Ratio Distribution">
+                            <img src="../static/images/charts/aspect_ratio_distribution.png" class="img-responsive"
+                                alt="Aspect Ratio Distribution">
+
+                            <div class="menu-info">
+                                <div class="menu-item">
+                                    <h3>Aspect Ratio Distribution</h3>
+                                    <p>Visualizing the aspect ratios of images in the dataset.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <!-- CHART THUMB -->
+                    <div class="menu-thumb">
+                        <a href="../static/images/charts/bbox_size_distribution.png" class="image-popup"
+                            title="Bounding Box Size Distribution">
+                            <img src="../static/images/charts/bbox_size_distribution.png" class="img-responsive"
+                                alt="Bounding Box Size Distribution">
+
+                            <div class="menu-info">
+                                <div class="menu-item">
+                                    <h3>Bounding Box Size Distribution</h3>
+                                    <p>Analyzing the sizes of bounding boxes in the dataset.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <!-- CHART THUMB -->
+                    <div class="menu-thumb">
+                        <a href="../static/images/charts/class_count_train.png" class="image-popup"
+                            title="Class Count in Training Set">
+                            <img src="../static/images/charts/class_count_train.png" class="img-responsive"
+                                alt="Class Count in Training Set">
+
+                            <div class="menu-info">
+                                <div class="menu-item">
+                                    <h3>Class Count in Training Set</h3>
+                                    <p>Distribution of fire and smoke classes in the training data.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-4 col-sm-6">
+                    <!-- CHART THUMB -->
+                    <div class="menu-thumb">
+                        <a href="../static/images/charts/class_distribution.png" class="image-popup"
+                            title="Class Distribution">
+                            <img src="../static/images/charts/class_distribution.png" class="img-responsive"
+                                alt="Class Distribution">
+
+                            <div class="menu-info">
+                                <div class="menu-item">
+                                    <h3>Class Distribution</h3>
+                                    <p>Visualizing the distribution of fire and smoke classes.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <!-- CHART THUMB -->
+                    <div class="menu-thumb">
+                        <a href="../static/images/charts/heatmap.png" class="image-popup"
+                            title="Heatmap of Annotations">
+                            <img src="../static/images/charts/heatmap.png" class="img-responsive"
+                                alt="Heatmap of Annotations">
+
+                            <div class="menu-info">
+                                <div class="menu-item">
+                                    <h3>Heatmap of Annotations</h3>
+                                    <p>Highlighting areas with frequent fire and smoke detections.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <!-- CHART THUMB -->
+                    <div class="menu-thumb">
+                        <a href="../static/images/charts/image_resolution_distribution.png" class="image-popup"
+                            title="Image Resolution Distribution">
+                            <img src="../static/images/charts/image_resolution_distribution.png" class="img-responsive"
+                                alt="Image Resolution Distribution">
+
+                            <div class="menu-info">
+                                <div class="menu-item">
+                                    <h3>Image Resolution Distribution</h3>
+                                    <p>Distribution of image resolutions across the dataset.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="row">
+
+
+
+                <div class="col-md-4 col-sm-6">
+                    <!-- CHART THUMB -->
+                    <div class="menu-thumb">
+                        <a href="../static/images/charts/object_area_vs_image_area.png" class="image-popup"
+                            title="Object Area vs Image Area">
+                            <img src="../static/images/charts/object_area_vs_image_area.png" class="img-responsive"
+                                alt="Object Area vs Image Area">
+
+                            <div class="menu-info">
+                                <div class="menu-item">
+                                    <h3>Object Area vs Image Area</h3>
+                                    <p>Comparing object sizes relative to image dimensions.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <!-- CHART THUMB -->
+                    <div class="menu-thumb">
+                        <a href="../static/images/charts/object_count_per_image.png" class="image-popup"
+                            title="Object Count per Image">
+                            <img src="../static/images/charts/object_count_per_image.png" class="img-responsive"
+                                alt="Object Count per Image">
+
+                            <div class="menu-info">
+                                <div class="menu-item">
+                                    <h3>Object Count per Image</h3>
+                                    <p>Distribution of detected objects across images.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <section id="testimonial" data-stellar-background-ratio="0.5">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-12 col-sm-12">
+                    <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
+                        <h2>Dataset Insights</h2>
+                    </div>
+                </div>
+
+                <div class="col-md-offset-2 col-md-8 col-sm-12">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <p>The dataset contains images depicting fire and smoke under diverse conditions, ensuring
+                                comprehensive model training.</p>
+                            <div class="tst-author">
+                                <h4>Dataset Overview</h4>
+                                <span>Understanding the Data</span>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <p>Visualizations such as class distribution and bounding box sizes help uncover dataset
+                                patterns, ensuring better detection accuracy.</p>
+                            <div class="tst-author">
+                                <h4>Data Distribution</h4>
+                                <span>Analyzing the Patterns</span>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <p>Insights drawn from these charts guide model improvements, optimizing detection
+                                performance for real-world scenarios.</p>
+                            <div class="tst-author">
+                                <h4>Model Insights</h4>
+                                <span>Enhancing Performance</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- FOOTER -->
+    <footer id="footer" data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row">
+                <p>All rights reserved &copy; Real-Time Fire & Smoke Detection Using YOLOv10</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- SCRIPTS -->
+    <script src="../static/js/jquery.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/jquery.stellar.min.js"></script>
+    <script src="../static/js/wow.min.js"></script>
+    <script src="../static/js/owl.carousel.min.js"></script>
+    <script src="../static/js/jquery.magnific-popup.min.js"></script>
+    <script src="../static/js/smoothscroll.js"></script>
+    <script src="../static/js/custom.js"></script>
+
+</body>
+
+</html>

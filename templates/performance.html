@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Real-Time Fire & Smoke Detector Using YOLOv10</title>
+    <!-- 
+
+Eatery Cafe Template 
+
+http://www.templatemo.com/tm-515-eatery
+
+-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/css/animate.css">
+    <link rel="stylesheet" href="../static/css/owl.carousel.css">
+    <link rel="stylesheet" href="../static/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../static/css/magnific-popup.css">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="../static/css/templatemo-style-2.css">
+
+</head>
+
+<body>
+
+    <!-- PRE LOADER -->
+    <!-- PRE LOADER -->
+    <section class="preloader">
+        <div class="spinner">
+            <span class="spinner-rotate"></span>
+        </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                </button>
+                <a href="/about" class="navbar-brand">Real-Time Fire <span>&</span> Smoke Detector Using YOLOv10</a>
+            </div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-nav-first">
+                    <li><a href="/about" class="smoothScroll">Upload</a></li>
+                    <li><a href="/live_video" class="smoothScroll">Live Camera</a></li>
+                    <li><a href="/performance" class="smoothScroll">Performance</a></li>
+                    <li><a href="/charts" class="smoothScroll">Charts</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <a href="/logout" class="section-btn">LogOut</a>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOME -->
+    <section id="home" class="slider" data-stellar-background-ratio="0.5">
+        <div class="row">
+            <div class="owl-carousel owl-theme">
+                <div class="item item-first">
+                    <img src="../static/images/header_fire_smoke.jpg" class="bg-video"
+                        style="width: 100%; height: 100%; object-fit: cover; position: absolute; z-index: -1;">
+                    <div class="caption">
+                        <div class="container">
+                            <div class="col-md-8 col-sm-12">
+                                <h3>Real-Time Fire & Smoke Detection Using YOLOv10</h3>
+                                <h1>Enhancing Safety with Real-Time Detection</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about" data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="performance-info">
+                        <div class="section-title wow fadeInUp" data-wow-delay="0.2s">
+                            <h4>Model Performance Analysis</h4>
+                            <h2>Fire & Smoke Detection Performance Metrics</h2>
+                        </div>
+                        <div class="wow fadeInUp" data-wow-delay="0.4s">
+                            <p>Below are the performance metrics and evaluation results of our YOLO-based fire and smoke
+                                detection model. The accuracy, precision, recall, and mAP scores indicate the
+                                effectiveness of the model in detecting fire and smoke in real-time scenarios.</p>
+                            <p>The following plots represent the training loss, validation loss, precision-recall
+                                curves, and mAP graphs of our model.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4">
+                    <div class="wow fadeInUp about-image" data-wow-delay="0.6s">
+                        <img src="../static/images/performance.jpg" class="img-responsive" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- TEAM -->
+    <section id="team" data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-12 col-sm-12">
+                    <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
+                        <h2>Performance</h2>
+                        <h4>Results of training</h4>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6">
+                    <div class="team-thumb wow fadeInUp" data-wow-delay="0.2s">
+                        <img src="../static/images/new/F1_curve.png" class="img-responsive" alt="">
+                        <div class="team-hover">
+                            <div class="team-item">
+                                <h4>F1 Score Curve - Performance Analysis</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>F1 Score Curve</h3>
+                        <p>Evaluating Model Precision and Recall Balance</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6">
+                    <div class="team-thumb wow fadeInUp" data-wow-delay="0.4s">
+                        <img src="../static/images/new/P_curve.png" class="img-responsive" alt="">
+                        <div class="team-hover">
+                            <div class="team-item">
+                                <h4>Precision Curve - Analyzing Model Accuracy</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Precision Curve</h3>
+                        <p>Visualizing Precision Across Detection Thresholds</p>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 col-sm-6">
+                    <div class="team-thumb wow fadeInUp" data-wow-delay="0.6s">
+                        <img src="../static/images/new/R_curve.png" class="img-responsive" alt="">
+                        <div class="team-hover">
+                            <div class="team-item">
+                                <h4>Recall Curve - Evaluating Model Sensitivity</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Recall Curve</h3>
+                        <p>Tracking Recall Across Detection Thresholds</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6">
+                    <div class="team-thumb wow fadeInUp" data-wow-delay="0.6s">
+                        <img src="../static/images/new/PR_curve.png" class="img-responsive" alt="">
+                        <div class="team-hover">
+                            <div class="team-item">
+                                <h4>Precision-Recall Curve - Balancing Precision and Recall</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Precision-Recall Curve</h3>
+                        <p>Visualizing Trade-offs Between Precision and Recall</p>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 col-sm-6">
+                    <div class="team-thumb wow fadeInUp" data-wow-delay="0.6s">
+                        <img src="../static/images/new/results.png" class="img-responsive" alt="">
+                        <div class="team-hover">
+                            <div class="team-item">
+                                <h4>Model Performance Results Overview</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Results Overview</h3>
+                        <p>Key Metrics and Performance Summary</p>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 col-sm-6">
+                    <div class="team-thumb wow fadeInUp" data-wow-delay="0.6s">
+                        <img src="../static/images/new/confusion_matrix.png" class="img-responsive" alt="">
+                        <div class="team-hover">
+                            <div class="team-item">
+                                <h4>Confusion Matrix</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Confusion Matrix</h3>
+                        <p>Visualizing Prediction Accuracy</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6">
+                    <div class="team-thumb wow fadeInUp" data-wow-delay="0.6s">
+                        <img src="../static/images/new/val_batch1_labels.jpg" class="img-responsive" alt="">
+                        <div class="team-hover">
+                            <div class="team-item">
+                                <h4>Validation Batch 1 - Labels</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Validation Labels</h3>
+                        <p>Ground Truth Annotations</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-6">
+                    <div class="team-thumb wow fadeInUp" data-wow-delay="0.6s">
+                        <img src="../static/images/new/val_batch1_pred.jpg" class="img-responsive" alt="">
+                        <div class="team-hover">
+                            <div class="team-item">
+                                <h4>Validation Batch 1 - Predictions</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h3>Validation Predictions</h3>
+                        <p>Model Inference Results</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- FOOTER -->
+    <footer id="footer" data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row">
+                <p>All rights reserved &copy; Real-Time Fire & Smoke Detection System Using YOLOv10</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- SCRIPTS -->
+    <script src="../static/js/jquery.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/jquery.stellar.min.js"></script>
+    <script src="../static/js/wow.min.js"></script>
+    <script src="../static/js/owl.carousel.min.js"></script>
+    <script src="../static/js/jquery.magnific-popup.min.js"></script>
+    <script src="../static/js/smoothscroll.js"></script>
+    <script src="../static/js/custom.js"></script>
+
+</body>
+
+</html>
