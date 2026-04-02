@@ -74,6 +74,7 @@ Fire-Smoke-Detection/\
 ## ⚙️ Installation
 
 git clone https://github.com/Nagesh-kamane/Real-Time-Fire-and-Smoke-Detection-Using-YOLOv10-and-Flask.git
+
 cd fire-smoke-detection
 
 python -m venv venv\
